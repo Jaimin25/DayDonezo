@@ -22,7 +22,10 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: Const.APP_NAME,
+  title: {
+    default: Const.APP_NAME,
+    template: Const.APP_NAME,
+  },
   description: Const.APP_DESCRIPTION,
   icons: {
     icon: [{ url: 'public/icon.png', sizes: '32x32' }],
@@ -52,6 +55,18 @@ export const metadata: Metadata = {
         alt: 'DayDonezo',
       },
     ],
+  },
+
+  applicationName: Const.APP_NAME,
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: Const.APP_NAME,
+    // startUpImage: [],
+  },
+  formatDetection: {
+    telephone: false,
   },
 };
 
