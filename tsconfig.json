@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "WebWorker"
+    ],
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -19,15 +23,21 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@/*": [
+        "./*"
+      ]
+    },
+    "allowJs": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/Marketing/FaqSection/index.tsc"
+    "components/Marketing/FaqSection/index.tsc",
+    "public/sw.js"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
