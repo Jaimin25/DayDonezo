@@ -17,6 +17,10 @@ export async function middleware(request: NextRequest) {
   const path = url.pathname;
   const isAuth = await isUserAuth();
 
+  if (path.startsWith('/leaderboard')) {
+    return NextResponse.rewrite(new URL('/not-found', request.url));
+  }
+
   // Redirect to dashboard if logged in and accessing login/register routes
   if (['/login', '/register'].includes(path) && isAuth) {
     url.pathname = '/dashboard';
@@ -60,6 +64,5 @@ export const config = {
     '/journal/:path*', // Journal and its subpaths
     '/settings', // Settings page
     '/analytics', // Analytics page
-    '/leaderboard', // Leaderboard page
   ],
 };

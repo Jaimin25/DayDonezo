@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 import {
   BookText,
-  ChartNoAxesCombined,
+  // ChartNoAxesCombined,
   ChartPie,
   LayoutDashboard,
   Settings2,
@@ -34,11 +34,11 @@ const items = {
       url: '/journal',
       icon: BookText,
     },
-    {
-      title: 'Leaderboard',
-      url: '/leaderboard',
-      icon: ChartNoAxesCombined,
-    },
+    // {
+    //   title: 'Leaderboard',
+    //   url: '/leaderboard',
+    //   icon: ChartNoAxesCombined,
+    // },
     {
       title: 'Settings',
       url: '/settings',

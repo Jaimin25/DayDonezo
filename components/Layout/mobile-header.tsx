@@ -36,7 +36,7 @@ export default async function MobileHeader() {
               </a>
             </DrawerTitle>
           </DrawerHeader>
-          <DrawerFooter>
+          <DrawerFooter className="*:text-center">
             {/* <Button variant={"outline"}>Login</Button> */}
             {/* <a
               href="https://www.producthunt.com/posts/daydonezo?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-daydonezo"
@@ -52,10 +52,10 @@ export default async function MobileHeader() {
             </a> */}
             <Link
               href="https://github.com/Jaimin25/DayDonezo"
-              className="group h-10 w-full space-x-1 rounded-md"
+              className="group h-10 space-x-1 rounded-md"
               target="_blank"
             >
-              <RainbowButton className="group space-x-1">
+              <RainbowButton className="group w-3/4 space-x-1">
                 <span>Star on Github</span>
                 <Star
                   className="duration-250 fill-gray-400 stroke-gray-400 transition-colors group-hover:fill-yellow-500 group-hover:stroke-yellow-500"
@@ -69,13 +69,10 @@ export default async function MobileHeader() {
                 <FeedbackModal />
               </SidebarProvider>
             )}
-            <Link
-              href={isAuthenticated ? '/dashboard' : '/register'}
-              className="w-full"
-            >
+            <Link href={isAuthenticated ? '/dashboard' : '/register'}>
               <Button
                 variant={'default'}
-                className="w-full items-center text-center"
+                className="w-3/4 items-center text-center"
               >
                 {isAuthenticated ? (
                   <span>Dashboard</span>
