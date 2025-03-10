@@ -11,11 +11,11 @@ https://github.com/user-attachments/assets/d9e3ef59-c018-4c1a-a75a-bc91f7311297
 ## 🚀 Features
 
 - <b>Streak Tracking:</b> Keep track of your journaling streaks to maintain momentum.
-- <b>Leaderboard:</b> Engage in friendly competition with others and rank up based on your streaks and activities.
+- <b>(WIP) Leaderboard:</b> Engage in friendly competition with others and rank up based on your streaks and activities.
 - <b>Custom Avatar Generation:</b> Stand out with a unique avatar generated just for you.
 - <b>Shareable Wins:</b> Share your daily wins with beautifully generated photos.
 - <b>Encrypted Entries:</b> Your journal content is safe and private with encryption.
-- 📊 <b>Analytics:</b> Gain insights into your journaling habits with intuitive analytics.
+- <b>Analytics:</b> Gain insights into your journaling habits with intuitive analytics.
 
 ## 🛠️ Tech Stack
 
