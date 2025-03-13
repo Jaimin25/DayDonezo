@@ -8,6 +8,7 @@ import { Toaster } from 'sonner';
 import Providers from '../_providers/provider';
 import { cookies } from 'next/headers';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import NextTopLoader from 'nextjs-toploader';
 
 const rubik = Rubik({
   variable: '--font-sans',
@@ -87,6 +88,7 @@ export default async function RootLayout({
       >
         <GoogleAnalytics gaId={process.env.GOOGLE_TAG!} />
         <main className="flex h-screen min-h-svh flex-col overflow-y-auto">
+          <NextTopLoader showSpinner={false} color="#ff1c46" />
           <Providers>
             <Header />
             {children}
