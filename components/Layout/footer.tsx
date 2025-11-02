@@ -17,7 +17,7 @@ export default function Footer() {
       >
         Made with ❤️ by{' '}
         <a
-          href="https://x.com/jaimin_chovatia/"
+          href="https://jaimin.pro"
           target="_blank"
           className="underline hover:no-underline"
         >
